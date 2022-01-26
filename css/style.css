@@ -26,13 +26,10 @@
     width: 200px;
 }
 .formContainer{
-    /* border: 1px solid #000; */
     height: auto;
     min-height: 75vh;
     width: 40em;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
     flex-direction: column;
     margin: auto;
     margin-top: 3em;
@@ -41,19 +38,15 @@
     font-weight: bold;
     line-height: 55px;
     color: var(--secondaryBlack);
-    /* border: 1px solid #000; */
 }
 .userDetails{
-    /* border: 1px solid #000; */
     height: auto;
     width: 100%;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    /* margin: 1.5em 0; */
 }
 .userDetails .part1, .userDetails .part2{
-    /* border: 1px solid #000; */
     height: auto;
     width: 45%;
 }
@@ -97,14 +90,12 @@
     cursor: pointer;
 }
 .formContainer .buttonsContainer{
-    /* border: 1px solid blue; */
     height: 7em;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .buttons{
-    /* border: 1px solid red; */
     width: 15rem;
     display: flex;
     justify-content: space-around;
