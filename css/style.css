@@ -28,6 +28,7 @@
 .formContainer{
     /* border: 1px solid #000; */
     height: auto;
+    min-height: 75vh;
     width: 40em;
     display: flex;
     /* justify-content: center;
