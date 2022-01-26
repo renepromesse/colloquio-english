@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+:root{
+    --mainBg: #A6CBDE;
+    --primaryBlack: #000;
+    --secondaryBlack: #222A2E;
+    --tertialyBlack: #A2A3A4;
+    --primaryWhite: #fff;
+    --primaryRed: #f00;
+}
+
+.header{
+    height: 5em;
+    width: 100%;
+    background-color: var(--mainBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header img{
+    height: auto;
+    width: 200px;
+}
+.formContainer{
+    /* border: 1px solid #000; */
+    height: auto;
+    width: 40em;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: column;
+    margin: auto;
+    margin-top: 3em;
+}
+.formContainer .title{
+    font-weight: bold;
+    line-height: 55px;
+    color: var(--secondaryBlack);
+    /* border: 1px solid #000; */
+}
+.userDetails{
+    /* border: 1px solid #000; */
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    /* margin: 1.5em 0; */
+}
+.userDetails .part1, .userDetails .part2{
+    /* border: 1px solid #000; */
+    height: auto;
+    width: 45%;
+}
+.userDetails .part1 input,
+.userDetails .part2 input,
+.userMsg textarea{
+    margin: 1em 0;
+}
+
+.inputBox, textarea{
+    width: 100%;
+    height: 3em;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid var(--primaryBlack);
+    resize: none;
+    padding-left: 5px;
+    font-size: 14px;
+
+}
+.userMsg textarea{
+    height: 10em;
+}
+
+.inputBox::placeholder{
+    color: var(--primaryBlack);
+    opacity: 1;
+}
+.formContainer .userBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formContainer .buttons button{
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+.formContainer .buttonsContainer{
+    /* border: 1px solid blue; */
+    height: 7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buttons{
+    /* border: 1px solid red; */
+    width: 15rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 5rem;
+}
+.buttons button[type="submit"]{
+    background-color: var(--mainBg);
+    color: var(--primaryWhite);
+    font-size: 12px;
+}
+.buttons button[type="submit"]:hover{
+    background-color: var(--primaryBlack);
+    color: var(--primaryWhite);
+}
+.buttons button[type="reset"]{
+     background-color: var(--tertialyBlack);;
+     color: var(--primaryWhite);
+     font-size: 12px;
+}
+.buttons button[type="reset"]:hover{
+    background-color:  var(--primaryBlack);
+    color: var(--primaryWhite);
+}
+
+
+.invalid{
+    border-bottom: 1px solid var(--primaryRed);
+}
+.invalid::placeholder{
+    color: var(--primaryRed);
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.5em;
+    width: 100%;
+    background-color: var(--secondaryBlack);
+    color: var(--primaryWhite);
+    font-size: 0.7em;
+    font-weight: bold;
+
+}
+
+
+@media screen  and (max-width:768px) {
+    .formContainer{
+        width: 100%;
+        padding: 1em;
+    }
+    .userDetails{
+        flex-direction: column;
+    }
+    .userDetails .part1, .userDetails .part2{
+        width: 100%;
+    }
+    .userDetails .part1{
+        margin-bottom: 1em;
+    }
+    .userDetails .part2{
+        margin-top: 1em;
+    }
+    .userMsg textarea{
+        height: 10em;
+    }
+    
+}
